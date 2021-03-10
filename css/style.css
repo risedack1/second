@@ -42,7 +42,7 @@
         -webkit-text-size-adjust: 100%;
         z-index: 1;
         font-family: 'Roboto Slab', serif;
-        scroll-behavior: smooth;
+        /*scroll-behavior: smooth;*/
     }
     
     input,
