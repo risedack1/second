@@ -8,8 +8,9 @@ $(document).ready(function() {
             settings: {
                 centerMode: true,
                 arrows: false,
-                touchThreshold: 20,
+                touchThreshold: 50,
                 touchMove: true,
+                waitForAnimate: false,
             }
         }, ]
     });
@@ -24,7 +25,7 @@ $(document).ready(function() {
     $('.nav__burger').click(function(e) {
         $('.nav__burger, .burger__title, .nav__item.burger').toggleClass('active');
     });
-    $(".nav").on("click", ".nav__item__link", function(event) {
+    $(".nav, .burger__title").on("click", ".nav__item__link, .burger", function(event) {
 
         //отменяем стандартную обработку нажатия по ссылке
 
